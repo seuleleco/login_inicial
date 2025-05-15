@@ -1,8 +1,4 @@
 
-/*const cadastrobtn = document.getElementById("cadastrobtn");
-cadastrobtn.addEventListener("click", function(){
-  window.location.href = "register.html";
-});*/
 
 
 
@@ -14,12 +10,14 @@ registerform.addEventListener("submit", function(event){
   event.preventDefault();
   
   const inputUser = document.getElementById("reguser");
+  const inputUsertype = document.getElementById("usertipo");
   const inputSenha = document.getElementById("regpassword");
 
   /*const user = inputUser.value;
   const senha = inputSenha.value;*/
   const novoUsuario = {
     user: inputUser.value,
+    usertype: inputUsertype.value,
     senha: inputSenha.value
   };
   if(usuarios.some(usuario => usuario.user === novoUsuario.user)){
@@ -29,7 +27,7 @@ registerform.addEventListener("submit", function(event){
   usuarios.push(novoUsuario);
   localStorage.setItem("userbd", JSON.stringify(usuarios));
   alert("Usuário cadastrado com sucesso!");
-  
+
     
    
     
