@@ -1,4 +1,50 @@
 
+/*const cadastrobtn = document.getElementById("cadastrobtn");
+cadastrobtn.addEventListener("click", function(){
+  window.location.href = "register.html";
+});*/
+
+
+
+//FUNÇÃO DE CADASTRAR USUÁRIO
+let usuarios = JSON.parse(localStorage.getItem("userbd")) || [];//ARRAY PARA ARMAZENAR USUÁRIOS
+const registerform = document.getElementById("registerform");
+
+registerform.addEventListener("submit", function(event){
+  event.preventDefault();
+  
+  const inputUser = document.getElementById("reguser");
+  const inputSenha = document.getElementById("regpassword");
+
+  /*const user = inputUser.value;
+  const senha = inputSenha.value;*/
+  const novoUsuario = {
+    user: inputUser.value,
+    senha: inputSenha.value
+  };
+  if(usuarios.some(usuario => usuario.user === novoUsuario.user)){
+    alert("Usuário já existente!");
+    return;
+  }
+  usuarios.push(novoUsuario);
+  localStorage.setItem("userbd", JSON.stringify(usuarios));
+  alert("Usuário cadastrado com sucesso!");
+  
+    
+   
+    
+});
+
+
+
+
+
+
+
+
+
+
+
 //FUNÇÃO DE TROCAR TEMA DA PAGINA
 const gradients = [
     {
@@ -38,7 +84,7 @@ const gradients = [
 }
 
   //ANIMAÇÃO NO PLACEHOLDER
-  const input = document.getElementById("usertext");
+ const input = document.getElementById("usertext");
   const input2 = document.getElementById("password");
   const phrase = "Usuário...";
   const phrase2 = "Senha...";
@@ -64,28 +110,6 @@ const gradients = [
   typeEffect();
 
 
-const cadastrobtn = document.getElementById("cadastrobtn");
-cadastrobtn.addEventListener("click", function(){
-  window.location.href = "register.html";
-});
-
-
-
-// Function to register a new user
-function regbtn(username, password) {
-    const users = JSON.parse(localStorage.getItem('reguser')) || [];
-    const userExists = users.some(user => user.username === username);
-
-    if (userExists) {
-        alert('Username already exists');
-        return false;
-    }
-
-    users.push({ username, password });
-    localStorage.setItem('users', JSON.stringify(users));
-    alert('User registered successfully');
-    return true;
-};
 
 
 
@@ -102,38 +126,6 @@ function regbtn(username, password) {
 
 
 
-
-
-
-
-
-/*//LOGIN
-document.getElementById("loginform").addEventListener("submit", function(event){
-  event.preventDefault();
-  
-  
-  const usertext = document.querySelector("#usertext").value;
-  const password = document.querySelector("#password").value;
-  const valido = true;
-  const users = ["aluno", "professor", "diretor"];
-
-
-  if(usertext === users[0] && password === "aluno"){
-    window.location.href = "/redirects/aluno_area.html";
-  }else if(usertext === users[1] && password === "professor"){
-    window.location.href = "/redirects/prof_area.html";
-  }
-  if(usertext === users[2] && password === "diretor"){
-    window.location.href = "/redirects/direc_area.html";
-  }
- 
-    
-    
-}
-
-
-  );*/
-  
 
 
 
