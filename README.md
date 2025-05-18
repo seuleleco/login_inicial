@@ -19,3 +19,6 @@ Este projeto consiste em uma aplicação web com uma página de **login de usuá
 ##  🖋️ Como Rodar o Projeto Localmente
 
 1. Execute o arquivo .html ou utilizando liver Server
+
+🎯 Status do Projeto
+🚧 Em desenvolvimento... melhorias constantes sendo aplicadas! 🚀
