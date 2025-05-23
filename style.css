@@ -27,6 +27,8 @@ form{
  
 }
 
+
+
 header{
   top: -100px;
   display: flex;
@@ -52,6 +54,7 @@ header{
    transition: 0.3s ease-in-out;
    
 }
+
 
 #reguser {
   
@@ -95,6 +98,7 @@ header{
     
 }
 
+
 #usertext{
   
     font-size: 2vh;
@@ -130,6 +134,7 @@ header{
     
 }
 
+
 #regbtn{
   justify-content: center;
   align-items: center;
@@ -143,6 +148,7 @@ header{
   font-size: 16px;
   transition: 0.3s ease-in-out;
 }
+
 
 #loginbtn{
   justify-content: center;

@@ -1,3 +1,4 @@
+
 //FUNÇÃO DE CADASTRAR USUÁRIO
 let usuarios = JSON.parse(localStorage.getItem("userbd")) || [];//ARRAY PARA ARMAZENAR USUÁRIOS
 const registerform = document.getElementById("registerform");
