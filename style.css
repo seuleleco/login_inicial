@@ -59,7 +59,7 @@ header{
 #reguser {
   
     font-size: 2vh;
-    margin: 20px;
+    
     border-radius: 12px;
   padding: 12px 16px;
   border: 1px solid #5065dd;
@@ -162,6 +162,7 @@ header{
   outline: none;
   font-size: 16px;
   transition: 0.3s ease-in-out;
+  
 }
 
 #temabtn{
