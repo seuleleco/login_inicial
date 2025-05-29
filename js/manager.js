@@ -1,3 +1,4 @@
+
 let userLogadoNome = JSON.parse(localStorage.getItem("usuarioLogado"));
 
 console.log(userLogadoNome.user);
@@ -37,3 +38,11 @@ function trocartema() {
     temastatus.classList.remove("fade-out");
   }, 500);
 }
+
+const searchAlunos = document.getElementById("formpesquisar");  
+
+
+searchAlunos.innerHTML = "<ul><li>teste aluno</li></ul>";
+
+
+
