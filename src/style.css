@@ -212,14 +212,15 @@ h2{
     font-size: 12px;
     transition: 0.3s ease-in-out;
 }
-body, html{
-    margin: 0;
-    padding: 0;
-    
-    
-   
-    
 
+#loginpagebtn {
+  margin: 20px;
+    padding: 10px;
+    border-radius: 12px;
+    border: 1px solid #5065dd;
+    outline: none;
+    font-size: 12px;
+    transition: 0.3s ease-in-out;
 }
 
 .backgroundchanger{
