@@ -3,12 +3,9 @@
 
 const cadastroBtn = document.getElementById("cadastrobtn");
 
-
-cadastroBtn.addEventListener("click", function() {
-  window.location.href = "../src/register.html";
+cadastroBtn.addEventListener("click", function () {
+  window.location.href = "../pages/register.html";
 });
-
-
 
 function fazerLogin() {
   const dadosSalvo = JSON.parse(localStorage.getItem("userbd")) || [];
@@ -29,13 +26,13 @@ function fazerLogin() {
     );
 
     if (usuarioEncontrado.usertype === "aluno") {
-      window.location.href = "../redirects/aluno_area.html";
+      window.location.href = "../pages/redirects/aluno_area.html";
       alert("Login realizado com sucesso!");
     } else if (usuarioEncontrado.usertype === "professor") {
-      window.location.href = "../redirects/prof_area.html";
+      window.location.href = "../pages/redirects/prof_area.html";
       alert("Login realizado com sucesso!");
     } else if (usuarioEncontrado.usertype === "diretor") {
-      window.location.href = "../redirects/direc_area.html";
+      window.location.href = "../pages/redirects/direc_area.html";
       alert("Login realizado com sucesso!");
     } else {
       alert("/index.html");

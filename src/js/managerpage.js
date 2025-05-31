@@ -1,7 +1,10 @@
-
 let userLogadoNome = JSON.parse(localStorage.getItem("usuarioLogado"));
 
 console.log(userLogadoNome.user);
+
+const searchAlunos = document.querySelectorAll(".formpesquisar")[0];
+
+searchAlunos[2].innerHTML = userLogadoNome.user;
 
 //FUNÇÃO DE TROCAR TEMA DA PAGINA
 const gradients = [
@@ -38,11 +41,3 @@ function trocartema() {
     temastatus.classList.remove("fade-out");
   }, 500);
 }
-
-const searchAlunos = document.getElementById("formpesquisar");  
-
-
-searchAlunos.innerHTML = "<ul><li>teste aluno</li></ul>";
-
-
-

@@ -1,9 +1,8 @@
 const loginPageBtn = document.getElementById("loginpagebtn");
 
-loginPageBtn.addEventListener("click", function() {
-  window.location.href = "../src/index.html";
+loginPageBtn.addEventListener("click", function () {
+  window.location.href = "../pages/index.html";
 });
-
 
 //FUNÇÃO DE CADASTRAR USUÁRIO
 let usuarios = JSON.parse(localStorage.getItem("userbd")) || []; //ARRAY PARA ARMAZENAR USUÁRIOS
@@ -30,9 +29,11 @@ registerform.addEventListener("submit", function (event) {
   usuarios.push(novoUsuario);
   localStorage.setItem("userbd", JSON.stringify(usuarios));
   alert("Usuário cadastrado com sucesso!");
+
+  //LIMPAR CAMPOS APÓS CADASTRO
+  inputUser.value = "";
+  inputSenha.value = "";
 });
-
-
 
 //FUNÇÃO DE TROCAR TEMA DA PAGINA
 const gradients = [
