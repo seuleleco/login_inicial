@@ -21,4 +21,4 @@ Este projeto consiste em uma aplicação web com uma página de **login de usuá
 1. Execute o arquivo .html ou utilizando liver Server
 
 <h2>🎯 Status do Projeto </h2>
-🚧 Em desenvolvimento... melhorias constantes sendo aplicadas! 🚀
+🚧 Este projeto foi implementado em https://github.com/seuleleco/sistema_escolar 🚀
